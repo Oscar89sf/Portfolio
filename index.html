@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Oscar Sanchez - Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Oscar Sanchez personal portfolio website"
+    />
+    <meta property="og:image" content="/images/app.js.png" />
+    <title>Oscar Sanchez | Portfolio</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="top">
+      <nav class="nav">
+        <div class="nav__container container">
+          <h3 class="nav__brand"><span>Oscar</span> Sanchez</h3>
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__list__link" href="#top">Home</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__link" href="#about">About</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__link" href="#projects">Projects</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div id="nav-sm" class="nav__list__sm__container">
+            <ul class="nav__list__sm">
+              <li class="nav__list__item nav__list__item-sm">
+                <a class="nav__list__link" href="#top">Home</a>
+              </li>
+              <li class="nav__list__item nav__list__item-sm">
+                <a class="nav__list__link" href="#about">About</a>
+              </li>
+              <li class="nav__list__item nav__list__item-sm">
+                <a class="nav__list__link" href="#projects">Projects</a>
+              </li>
+              <li class="nav__list__item nav__list__item-sm">
+                <a class="nav__list__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="nav-btn" class="nav__sm-btn">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </div>
+
+    <main>
+      <!-- <h1 class="hero__heading-h1">Hello, I'm Oscar</h1> -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero_heading">
+            <div class="overline"></div>
+            <h1 class="hero__heading-h1">Hello, I'm Oscar</h1>
+            <h4 class="hero__heading-secondary">
+              I'm a <span class="type__text">Software</span> Developer
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__container container reveal">
+          <article class="about__text">
+            <h2 class="section__heading">About me</h2>
+            <p class="about__para">
+              <strong>I'm Oscar</strong> and I am passionate about writing
+              clean, semantic code. I'm available for hire in the web/software
+              development sector. When I'm not sat in front of my laptop, I can
+              be found in the park playing football with my child or having a
+              good time with my family making a bbq.
+            </p>
+            <p class="about__para">
+              If I were to describe myself in code it might look like.....
+            </p>
+          </article>
+
+          <div class="code__block">
+            <picture>
+              <source srcset="images/app.js.png" />
+              <img
+                class="code__block__img"
+                src="images/code.png"
+                alt="Oscar Sanchez code block"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="skills__container container reveal">
+          <h2 class="section__heading">My Skills</h2>
+          <div class="skills__content">
+            <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">React</div>
+              <div class="skill">Redux</div>
+              <div class="skill">Phyton</div>
+              <div class="skill">SASS</div>
+              <div class="skill">Node</div>
+              <div class="skill">Express</div>
+              <div class="skill">SQL</div>
+              <div class="skill">Git</div>
+              <div class="skill">Github</div>
+            </div>
+            <div class="skills__para">
+              <p class="about__para">
+                <strong>I started</strong> my journey by teaching myself Html,
+                CSS after that I decided to go a little step forward and make a
+                JavaScript course in Udemy, where I found that coding is not
+                only challenging, you can have a loot of fun building apps,
+                games or just making some projects to practise and improve your
+                knowledge
+              </p>
+              <p class="about__para">
+                <strong>I decided</strong> to take my abilities to the next
+                level and invested in a coding bootcamp. After much research I
+                choose
+                <a
+                  class="external__link"
+                  href="https://www.thejump.tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >The Jump Digital School</a
+                >. The syllabus is very comprehensive and teaches the latest
+                tech. I learnt so much during the course and I'm now ready to
+                work full time in the industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="projects">
+        <div class="container reveal">
+          <h2 class="section__heading">Projects</h2>
+          <div class="project__container">
+            <article class="project__card reveal">
+              <header class="project__card__header">
+                <h3>The Pizza Palace</h3>
+              </header>
+              <p class="project__card__para">
+                The Pizza Palace is a proof of concept project that shows my
+                knowledge and understanding of React. It is essentially a pizza
+                restaurant themed web app that allows users to sign up as a
+                costumer. Manage your order and check when is ready or the
+                delivery time.
+              </p>
+              <p class="project__card__para">
+                Whilst this was an extremely challenging project, it helped me
+                appreciate just how awesome frontend frameworks like react
+                really are and also helped solidify my JavaScript knowledge.
+              </p>
+              <footer class="project__card__footer">
+                <ul class="project__card__list">
+                  <li>HTML</li>
+                  <li>TailWind</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Axios</li>
+                </ul>
+                <a
+                  class="project__card__btn"
+                  href="https://thepizzapalace.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo</a
+                >
+                <a
+                  class="project__card__btn github"
+                  href="https://github.com/Oscar89sf/React_App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github repo <i class="fa-brands fa-github"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="project__card reveal">
+              <header class="project__card__header">
+                <h3>Nowness Homepage Piece</h3>
+              </header>
+              <p class="project__card__para">
+                The brief was to recreate an existing homepage, which was to be
+                as true to the original as possible. For this project I choose
+                NOWNESS.com. The reason for my choice was that I felt it had a
+                lot of different features that would further challenge my CSS
+                thinking, knowledge and skills.
+              </p>
+              <footer class="project__card__footer">
+                <ul class="project__card__list">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                </ul>
+                <a
+                  class="project__card__btn github"
+                  href="https://github.com/Oscar89sf/Website_project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github <i class="fa-brands fa-github"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="project__card reveal">
+              <header class="project__card__header">
+                <h3>Weather App</h3>
+              </header>
+              <p class="project__card__para">
+                This was one of the homework tasks from the
+                <a
+                  class="external__link"
+                  href="https://www.thejump.tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >The Jump Digital School</a
+                >
+                JavaScript module. The brief was to create a simple weather
+                application that gets data from an api and manipulates the DOM
+                using vanilla javascript to display the data on the screen.
+              </p>
+              <p class="project__card__para">
+                The app uses geolocation to get a users current location and
+                displays the weather for where they are. There is an input box
+                where a user can search for a place; this then returns the
+                weather for the location searched. The app gives the user the
+                current weather, the days forecast in 3 hourly intervals and
+                also a daily forecast for the following 5 days. Other features
+                include the background changing colour depending on the current
+                weather conditions.
+              </p>
+              <footer class="project__card__footer">
+                <ul class="project__card__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Axios</li>
+                </ul>
+                <a
+                  class="project__card__btn"
+                  href="https://try-weather-app.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo</a
+                >
+                <a
+                  class="project__card__btn github"
+                  href="https://github.com/Oscar89sf/weather_ch14_project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github <i class="fa-brands fa-github"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="project__card reveal">
+              <header class="project__card__header">
+                <h3>Pig Game</h3>
+              </header>
+              <p class="project__card__para">
+                Welcome to this game, where you'll get a taste of JavaScript,
+                HTML, and CSS. In this game, players can switch between each
+                other while keeping track of their current scores. However, be
+                cautious not to roll a 1, as it will cost you your turn!
+              </p>
+              <footer class="project__card__footer">
+                <ul class="project__card__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a
+                  class="project__card__btn"
+                  href="https://dice-game-oscarsf.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo</a
+                >
+                <a
+                  class="project__card__btn github"
+                  href="https://github.com/Oscar89sf/Dice-Game"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github <i class="fa-brands fa-github"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="project__card reveal">
+              <header class="project__card__header">
+                <h3>Mapty, record your workout</h3>
+              </header>
+              <p class="project__card__para">
+                This was my piece of homework from
+                <a
+                  class="external__link"
+                  href="https://www.udemy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Udemy</a
+                >
+                on their Complete JavaScript Course. Project Objective,
+                establish a comprehensive system for tracking cycling and
+                running workouts, recording key data such as duration, cadence
+                (for cycling), distance, date, and other relevant details. The
+                aim is to promote effective physical activity monitoring and the
+                achievement of fitness goals while ensuring organized and
+                accessible data storage for future reference.
+              </p>
+              <footer class="project__card__footer">
+                <ul class="project__card__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a
+                  class="project__card__btn"
+                  href="https://mapty-oscarsf.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo
+                </a>
+
+                <a
+                  class="project__card__btn github"
+                  href="https://github.com/Oscar89sf/Mapty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github <i class="fa-brands fa-github"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="project__card reveal">
+              <header class="project__card__header">
+                <h3>Bankist</h3>
+              </header>
+              <p class="project__card__para">
+                This was my piece of homework from
+                <a
+                  class="external__link"
+                  href="https://www.udemy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Udemy</a
+                >
+                on their Complete JavaScript Course. This project, implemented
+                in JavaScript, represents an impressive showcase of my acquired
+                skills and knowledge. It provides a seamless and versatile user
+                experience, allowing you to navigate through various menus,
+                including a dedicated account creation page. This application
+                demonstrates my ability to create interactive and functional
+                interfaces using JavaScript technology
+              </p>
+              <p class="project__card__para"></p>
+              <footer class="project__card__footer">
+                <ul class="project__card__list">
+                  <li>HTML</li>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                </ul>
+                <a
+                  class="project__card__btn"
+                  href="https://bankist-oscarsf.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live site</a
+                >
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container reveal">
+          <h2 class="section__heading">Contact me</h2>
+          <div class="contact__container">
+            <div class="contact__img__section">
+              <div class="profile__img contact__img">
+                <picture>
+                  <source srcset="./images/me.JPG" />
+                  <img
+                    class="profile__photo contact__photo"
+                    src="images/me.jpg"
+                    alt="Oscar Sanchez"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="contact-info">
+              <h4 class="section__heading">Say hello...</h4>
+              <address>
+                <p>
+                  Email:
+                  <a href="mailto:osanfernandez@gmail.com"
+                    >osanfernandez@gmail.com</a
+                  >
+                </p>
+                <br />
+                <p>Tel: <a href="tel:+447858466989">+447858466989</a></p>
+                <br />
+                <p>CV: <a href="Oscar CV.pdf" target="_blank">Resume</a></p>
+                <ul class="social-icon-list">
+                  <li class="social-icon">
+                    <a
+                      href="https://wa.me/+447858466989"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li class="social-icon">
+                    <a
+                      href="https://www.linkedin.com/in/oscarsanchezfer/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li class="social-icon">
+                    <a
+                      href="https://github.com/Oscar89sf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                </ul>
+              </address>
+              <aside class="quote">
+                <figure>
+                  <blockquote>
+                    <p>
+                      &ldquo; A major thing I wanted to compliment is your
+                      attention to detail, you've clearly thought hard about the
+                      end user experience (which fundamentally is who we write
+                      software for). &rdquo;
+                    </p>
+                  </blockquote>
+                  <figcaption>
+                    <cite
+                      >-Jon Pitans(Teaching Assistant - The Jump Digital
+                      School)</cite
+                    >
+                  </figcaption>
+                </figure>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Made for coding.
+        <span>Oscar Sanchez</span> <sup>&copy;</sup>
+      </p>
+      <a href="#top">
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 115.4 122.88"
+        >
+          <title>up-arrow</title>
+          <path
+            fill="#ffffff"
+            d="M24.94,67.88A14.66,14.66,0,0,1,4.38,47L47.83,4.21a14.66,14.66,0,0,1,20.56,0L111,46.15A14.66,14.66,0,0,1,90.46,67.06l-18-17.69-.29,59.17c-.1,19.28-29.42,19-29.33-.25L43.14,50,24.94,67.88Z"
+          />
+        </svg>
+      </a>
+    </footer>
+  </body>
+</html>
